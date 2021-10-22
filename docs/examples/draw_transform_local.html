@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Notan - draw_local_transform</title>
+    <title>Notan - draw_transform_local</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -40,17 +40,17 @@
     </style>
 </head>
 <body>
-<script src="./draw_local_transform/draw_local_transform.js"></script>
+<script src="./draw_transform_local/draw_transform_local.js"></script>
 <script>
       window.addEventListener("load", async () => {
-            let wasm = await wasm_bindgen("./draw_local_transform/draw_local_transform_bg.wasm");
+            let wasm = await wasm_bindgen("./draw_transform_local/draw_transform_local_bg.wasm");
       });
 </script>
 <div id="source-code">
     <h1>
-        draw_local_transform
+        draw_transform_local
     </h1>
-    <a href="https://github.com/Nazariglez/nae/blob/main/examples/draw_local_transform.rs">Source Code</a>
+    <a href="https://github.com/Nazariglez/nae/blob/main/examples/draw_transform_local.rs">Source Code</a>
 </div>
 <div id="container">
     <canvas id="notan_canvas"></canvas>
