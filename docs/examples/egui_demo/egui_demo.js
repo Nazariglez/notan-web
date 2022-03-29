@@ -213,27 +213,27 @@ function makeMutClosure(arg0, arg1, dtor, f) {
     return real;
 }
 function __wbg_adapter_24(arg0, arg1) {
-    wasm._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h36a3f33d4d8dd6c0(arg0, arg1);
+    wasm._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h27136e3645cb52a0(arg0, arg1);
 }
 
 function __wbg_adapter_27(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h06bf28d8eb88e5a7(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0d4b3d2c3bb865f8(arg0, arg1, addHeapObject(arg2));
 }
 
 function __wbg_adapter_30(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h06bf28d8eb88e5a7(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0d4b3d2c3bb865f8(arg0, arg1, addHeapObject(arg2));
 }
 
 function __wbg_adapter_33(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h06bf28d8eb88e5a7(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0d4b3d2c3bb865f8(arg0, arg1, addHeapObject(arg2));
 }
 
 function __wbg_adapter_36(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h06bf28d8eb88e5a7(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0d4b3d2c3bb865f8(arg0, arg1, addHeapObject(arg2));
 }
 
 function __wbg_adapter_39(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h06bf28d8eb88e5a7(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0d4b3d2c3bb865f8(arg0, arg1, addHeapObject(arg2));
 }
 
 function handleError(f, args) {
@@ -907,14 +907,6 @@ async function init(input) {
     imports.wbg.__wbg_setAttribute_1776fcc9b98d464e = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4) {
         getObject(arg0).setAttribute(getStringFromWasm0(arg1, arg2), getStringFromWasm0(arg3, arg4));
     }, arguments) };
-    imports.wbg.__wbg_deltaX_df228181f4d1a561 = function(arg0) {
-        var ret = getObject(arg0).deltaX;
-        return ret;
-    };
-    imports.wbg.__wbg_deltaY_afa6edde136e1500 = function(arg0) {
-        var ret = getObject(arg0).deltaY;
-        return ret;
-    };
     imports.wbg.__wbg_clientX_849ccdf456d662ac = function(arg0) {
         var ret = getObject(arg0).clientX;
         return ret;
@@ -940,6 +932,10 @@ async function init(input) {
     };
     imports.wbg.__wbg_preventDefault_fa00541ff125b78c = function(arg0) {
         getObject(arg0).preventDefault();
+    };
+    imports.wbg.__wbg_button_a18f33eb55774d89 = function(arg0) {
+        var ret = getObject(arg0).button;
+        return ret;
     };
     imports.wbg.__wbg_dataTransfer_bc4c0501385a0c8e = function(arg0) {
         var ret = getObject(arg0).dataTransfer;
@@ -971,8 +967,12 @@ async function init(input) {
         getInt32Memory0()[arg0 / 4 + 1] = len0;
         getInt32Memory0()[arg0 / 4 + 0] = ptr0;
     };
-    imports.wbg.__wbg_button_a18f33eb55774d89 = function(arg0) {
-        var ret = getObject(arg0).button;
+    imports.wbg.__wbg_deltaX_df228181f4d1a561 = function(arg0) {
+        var ret = getObject(arg0).deltaX;
+        return ret;
+    };
+    imports.wbg.__wbg_deltaY_afa6edde136e1500 = function(arg0) {
+        var ret = getObject(arg0).deltaY;
         return ret;
     };
     imports.wbg.__wbg_items_d571f433ef73ee49 = function(arg0) {
@@ -1004,16 +1004,16 @@ async function init(input) {
     imports.wbg.__wbg_addEventListener_6bdba88519fdc1c9 = function() { return handleError(function (arg0, arg1, arg2, arg3) {
         getObject(arg0).addEventListener(getStringFromWasm0(arg1, arg2), getObject(arg3));
     }, arguments) };
-    imports.wbg.__wbg_fullscreen_aa1188ada751a534 = function(arg0) {
-        var ret = getObject(arg0).fullscreen;
-        return ret;
-    };
     imports.wbg.__wbg_clientWidth_4c903f82634f2159 = function(arg0) {
         var ret = getObject(arg0).clientWidth;
         return ret;
     };
     imports.wbg.__wbg_clientHeight_cddbd2cef19a2cb1 = function(arg0) {
         var ret = getObject(arg0).clientHeight;
+        return ret;
+    };
+    imports.wbg.__wbg_fullscreen_aa1188ada751a534 = function(arg0) {
+        var ret = getObject(arg0).fullscreen;
         return ret;
     };
     imports.wbg.__wbg_key_7f10b1291a923361 = function(arg0, arg1) {
@@ -1100,23 +1100,23 @@ async function init(input) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_24);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2310 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2316 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_27);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2342 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2343 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_30);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2348 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2351 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_33);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2353 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2354 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_36);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2356 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2358 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_39);
         return addHeapObject(ret);
     };
